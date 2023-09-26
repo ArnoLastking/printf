@@ -99,7 +99,7 @@ int print_percent(va_list types, char buffer[],
 
 /************************* PRINT INT *************************/
 /**
- * print_int - Print int
+ * print_int - print int
  * @types: Lista of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
@@ -141,7 +141,7 @@ int print_int(va_list types, char buffer[],
 	return (write_number(is_negative, i, buffer, flags, width, precision, size));
 }
 
-/************************* PRINT BINARY *************************/
+/********************** PRINT BINARY **********************/
 /**
  * print_binary - Prints an unsigned number
  * @types: Lista of arguments
@@ -186,4 +186,3 @@ int print_binary(va_list types, char buffer[],
 	}
 	return (count);
 }
-
